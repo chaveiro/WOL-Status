@@ -18,7 +18,6 @@
 	  for ($a = 1; $a <= 16; $a++) $msg .= $hw_addr;
 	  // send it to the broadcast address using UDP
 	  // SQL_BROADCAST option isn't help!!
-	  return array(TRUE, "FAKE Magic packet sent");
 	  $s = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
 	  if ($s == false) {
 			return array(FALSE,"Error creating socket. Code is '".socket_last_error($s)."' - " . socket_strerror(socket_last_error($s)));
