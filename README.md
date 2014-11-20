@@ -14,22 +14,23 @@ Requires PHP. Include jQuery and bootstrap.
 
 Edit configuration in configure.php array as follow:
 
-$this->networks = array( new Network("Network A", 
-						   array(
-								  new Machine("Machine 1",	"localhost", array("RDP"=>3389,"FTP"=>21)
-									, true, "00:00:00:00:00:00"),
-								  new Machine("Machine 2",	"localhost", array("HTTPS"=>443,"SSH"=>22,"HTTP"=>80)
-									, true, "00:00:00:00:00:00")
-							)
-						),
-						new Network("Network B",
-							array(
-								  new Machine("Machine 1",	"localhost", array("RDP"=>3389,"HTTP"=>80,"HTTPS"=>443,"FTP"=>21)
-									, false)
-							)
-						)
+$this->networks = array(
+new Network("Network A", 
+	array(
+	  new Machine("Machine 1",	"localhost", array("RDP"=>3389,"FTP"=>21)
+		, true, "00:00:00:00:00:00"),
+	  new Machine("Machine 2",	"localhost", array("HTTPS"=>443,"SSH"=>22,"HTTP"=>80)
+		, true, "00:00:00:00:00:00")
+		)
+	),
+new Network("Network B",
+	array(
+	  new Machine("Machine 1",	"localhost", array("RDP"=>3389,"HTTP"=>80,"HTTPS"=>443,"FTP"=>21)
+		, false)
+		)
+	)
 
-				);
+);
 				
 				
 History:
