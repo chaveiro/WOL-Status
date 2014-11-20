@@ -37,4 +37,4 @@ new Network("Network B",
 				
 				
 History:
-0.9b - 20-11-2013 - First public release.
+0.9b - 20-11-2014 - First public release.
