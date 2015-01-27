@@ -38,3 +38,4 @@ new Network("Network B",
 				
 History:
 0.9b - 20-11-2014 - First public release.
+1.0  - 27-01-2015 - Added refresh continuous 30 secs interval.
