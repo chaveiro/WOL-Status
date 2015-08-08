@@ -108,7 +108,7 @@ function processConfig(networks){
     });
     $("#mainBody").html(htmlOut);
     
-    $("button[id^='actionWOL_']").on("click", function() {
+    $("button[id^='actionWOL_']").on("click touchstart", function() {
         wol(this.id.replace("actionWOL_",""));
     });
 }
